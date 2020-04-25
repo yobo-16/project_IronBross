@@ -57,12 +57,19 @@
 
     ##Iteraciones
 
-    . Crear el Canvas y relacionarlo el resto de los archivos.
-    . Generar la animación del fondo.
-    . Crear personaje y sus métodos:
-        1. Saltar.
-        2. Vida.        
-    . Crear obstáculos.
+        Iteración 1.
+
+            . Crear el Canvas y relacionarlo el resto de los archivos.
+            . Generar la animación del fondo.
+            . Crear personaje y sus métodos:
+                1. Saltar.
+                2. Vida.        
+            . Crear obstáculos.
+
+        Iteración 2.
+
+            . Crear enemigos.
+            . Crear colisión con obstáculos.
 
 
 
