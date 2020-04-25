@@ -35,17 +35,15 @@
     ## Git
         Repositorio: https://github.com/yobo-16/project_IronBross
 ​
+
 // Deploy: (no ahora, para un futuro)
 ​
     ## Slides
 
 ​
     ##Kanban
-
-
-        Board on Trello
             
-            https://trello.com/invite/b/VAwkFrdu/dd3ec789e12b4dd5e2a643cb4e04780f/ironbross
+           Trello: https://trello.com/invite/b/VAwkFrdu/dd3ec789e12b4dd5e2a643cb4e04780f/ironbross
 
     ##Iteraciones
 
