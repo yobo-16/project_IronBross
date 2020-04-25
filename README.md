@@ -14,16 +14,26 @@
 
      #MVP
 
-     .Va a constar de un nivel.
-     .Será un loop infinito de obstáculos.
-     .El personaje se va mover sólo en el eje x.
-     .El usuario debe saltar los obstaculos.
-     .Cuando haya una colisión con osbtaculos se pierde.
+        . Crear Tablero.
+
+        . Crear CANVAS.
+
+        . Crear obstaculos.
+
+        . Crear Personaje.
+
+        . Crear Loop infinito Nivel. 
+
      
 
 
     ## Backlog
 
+     .Va a constar de un nivel.
+     .Será un loop infinito de obstáculos.
+     .El personaje se va mover sólo en el eje x.
+     .El usuario debe saltar los obstaculos.
+     .Cuando haya una colisión con osbtaculos se pierde.
     . Cuando haya una colisión con enemigos se pierde.
     . El usuario debe disparar a los enemigos.
     . Al inicio de la partida sólo se tienen 3 vidas
