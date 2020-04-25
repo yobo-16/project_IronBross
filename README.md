@@ -1,4 +1,4 @@
-#IronBross
+# IronBross
 
 
 ##Descripción
@@ -6,13 +6,13 @@ Es un juego estilo plataforma que hace una metáfora de estudiantes de desarroll
 Consta de un solo nivel que aumenta su dificultad a medida que avanza el tiempo y la cantidad de puntos. Mientras más puntos tengas más dificil será el juego (mienstras más conocimientos tengas, los retos serán mayores).
 El concepto báscio del juego es eaquivar obstáculos y derrotar enemigos con sus herramientas.
 
-##Reglas
+## Reglas
 
 1. El usuario sólo debe escoger su personaje.
 2. Sólo se debe usar la barra espaciadora.
 
 
-#MVP
+# MVP
 
 . Crear Tablero.
 
@@ -51,11 +51,11 @@ Repositorio: https://github.com/yobo-16/project_IronBross
 ## Slides
 
 ​
-##Kanban
-    
-    Trello: https://trello.com/invite/b/VAwkFrdu/dd3ec789e12b4dd5e2a643cb4e04780f/ironbross
+## Kanban
 
-##Iteraciones
+    Repositorio: https://trello.com/invite/b/VAwkFrdu/dd3ec789e12b4dd5e2a643cb4e04780f/ironbross
+
+## Iteraciones
 
 Iteración 1.
 
