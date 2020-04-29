@@ -106,6 +106,7 @@ function subir() {
     player.y -= desplazamientoSalto;
 
     // Altura del salto
+
     if (player.y <= 2) {
 
         clearInterval(salto);
@@ -119,27 +120,29 @@ function bajar() {
 
     player.y += desplazamientoSalto;
 
-    if (player.y >= (superficie - rex.h)) {
+    if (player.y >= (superficie - player.h)) {
 
         clearInterval(salto);
     }
-}
+};
 
 
 function iniciarSalto() {
 
     salto = setInterval("subir()", velocidadSalto);
 
-}
+};
 
 
 function saltar(event) {
+
+    console.log("DEBE SALIR ESTO SI SE ESTÁ LLAMANDO A LA FUNCION DE SALTAR CORRECTAMENTE")
 
     if (event.keyCode == 38) {
 
         iniciarSalto();
     }
-}
+};
 
 
 
