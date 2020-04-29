@@ -90,7 +90,7 @@ class Player extends Objeto {
         ctx.drawImage(this.img, this.x, this.y) //im y su ubicación
     }
 
-}
+};
 
 // Objetos
 
@@ -107,12 +107,16 @@ function subir() {
 
     // Altura del salto
 
+
+
     if (player.y <= 2) {
 
         clearInterval(salto);
 
         salto = setInterval("bajar()", velocidadSalto);
     }
+
+
 };
 
 
@@ -138,11 +142,13 @@ function saltar(event) {
 
     console.log("DEBE SALIR ESTO SI SE ESTÁ LLAMANDO A LA FUNCION DE SALTAR CORRECTAMENTE")
 
-    if (event.keyCode == 38) {
+    if (event.keyCode == 32) { // Barra espaciadora
 
         iniciarSalto();
     }
 };
+
+
 
 
 
