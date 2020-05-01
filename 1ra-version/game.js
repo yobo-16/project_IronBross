@@ -70,7 +70,7 @@ class Mundo {
 
     // método del movimiento
     mover() {
-        this.x -= desplazamiento + 5
+        this.x -= desplazamiento
     }
 };
 
@@ -113,7 +113,7 @@ function subir() {
 
         clearInterval(salto);
 
-        salto = setInterval("bajar()", velocidadSalto);
+        salto = setInterval("bajar()", velocidadSalto * 2);
     }
 
 
@@ -122,7 +122,7 @@ function subir() {
 
 function bajar() {
 
-    player.y += desplazamientoSalto;
+    player.y += desplazamientoSalto * 3;
 
     if (player.y >= (superficie - player.h)) {
 
@@ -133,7 +133,7 @@ function bajar() {
 
 function iniciarSalto() {
 
-    salto = setInterval("subir()", velocidadSalto);
+    salto = setInterval("subir()", velocidadSalto * 2);
 
 };
 
