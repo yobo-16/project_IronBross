@@ -1,6 +1,8 @@
 "use-strict";
 
 const main = () => {
+
+  const level = new Level()
   const buildDom = (html) => {
     const main = document.querySelector("main");
     main.innerHTML = html;
@@ -17,7 +19,7 @@ const main = () => {
     startButton.addEventListener("click", buildGameScreen);
   };
 
-  const buildGameScreen = () => {
+  function createCanvas() {
     buildDom(`
             <section class="game-screen">
                 <canvas></canvas>
@@ -34,11 +36,21 @@ const main = () => {
 
     canvasElement.setAttribute("width", width);
     canvasElement.setAttribute("height", height);
+    return canvasElement
+  };
 
-    const game = new Game(canvasElement);
+  const buildGameScreen = () => {
+    const canvasElement = createCanvas();
+
+    const game = new Game(canvasElement, level.level1);
     game.gameOverCallback(buildGameOver);
 
+    // game.nextLevelCallback(buildLevelNumberTwo());
+
+    game.createEnemies();
+
     game.startLoop();
+
 
     const setPlayerDirection = (event) => {
       if (event.code === "Space" && game.player.limiteDeSalto === false) { // limitación de salto por tecla pulsada
@@ -63,6 +75,26 @@ const main = () => {
     const restartButton = document.querySelector("button");
     restartButton.addEventListener("click", buildGameScreen);
   };
+
+
+  // FUNCION PARA LOS LEVELS
+
+  // function buildLevelNumberTwo() {
+
+  //   const canvasElement = createCanvas();
+
+
+
+  //   const game = new Game(canvasElement, level.level1);
+  //   game.gameOverCallback(buildGameOver);
+
+  //   game.nextLevelCallback(buildLevelNumberTwo());
+
+  //   game.createEnemies();
+
+  //   game.startLoop();
+
+  // }
 
   buildSplashScreen();
 };

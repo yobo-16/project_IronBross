@@ -16,7 +16,7 @@ class Floor {
   }
 
   draw() {
-    this.ctx.fillStyle = "#C8F5FF";
+    this.ctx.fillStyle = "green";
     this.ctx.fillRect(0, this.y - this.size / 2, this.canvas.width, this.size);
   }
 
