@@ -1,3 +1,4 @@
+"use-strict";
 class Enemy {
     constructor(canvas, x) {
         this.size = 30;

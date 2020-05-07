@@ -1,3 +1,4 @@
+"use-strict";
 class Empty {
     constructor(canvas, y) {
         this.size = 20;

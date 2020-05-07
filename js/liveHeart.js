@@ -1,5 +1,4 @@
 "use strict";
-
 class Heart {
     constructor(canvas, positionX, positionY, size) {
         this.size = size;

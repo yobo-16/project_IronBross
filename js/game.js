@@ -1,3 +1,4 @@
+"use-strict";
 class Game {
   constructor(canvas, enemiesPosition) {
     this.canvas = canvas;
