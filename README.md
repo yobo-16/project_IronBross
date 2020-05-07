@@ -53,7 +53,7 @@ Repositorio: https://github.com/yobo-16/project_IronBross
 ​
 ## Kanban
 
-    trello: https://trello.com/b/VAwkFrdu/ironbross 
+    trello: https://trello.com/b/VAwkFrdu/ironbross - automatic!
 
 ## Iteraciones
 
