@@ -51,64 +51,59 @@ const main = () => {
 
   const buildGameScreen = () => {
     const canvasElement = createCanvas();
-
     const game = new Game(canvasElement, level.level1);
-    game.gameOverCallback(buildGameOver);
-
-    game.createEnemies();
-
-    game.startLoop();
-
-    // if (canvasElement) {
-
-
-
-    //   //Jump Limitation
-
-    //   if (event.code === "Space" && game.player.limiteDeSalto === false) {
-    //     document.getElementById("salto").play()
-    //     game.player.setDirection(-1);
-    //   }
-
-
-    // }
-
-    //const sonido = document.getElementById("salto");
-
-    const setPlayerDirection = (event) => {
-
-      //Jump Limitation
-      if (document.getElementById("salto")) {
-
-
-        if (event.code === "Space" && game.player.limiteDeSalto === false) {
-          game.player.setDirection(-1);
-          document.getElementById("salto").play();
-        }
-
-      }
-
-
-    };
-
-    document.addEventListener("keydown", setPlayerDirection);
-  };
-
-  const buildGameOver = () => {
-    buildDom(`
+    game.gameOverCallback(function () {
+      buildDom(`
             <section class="game-over">
               <div class="gameOver">
-                
+                <h1>Tus monedas fueron: ${game.player.coins} PERDEDOR!!</h1>
                 <button class="botones" id="restart">RESTART</button>
                 <div id="funeral">
                 </div>
               </div>
             </section>
         `);
-
-    const restartButton = document.querySelector("button");
-    restartButton.addEventListener("click", buildGameScreen);
+      const restartButton = document.querySelector("button");
+      restartButton.addEventListener("click", buildGameScreen);
+    });
+    game.createEnemies();
+    game.startLoop();
+    // if (canvasElement) {
+    //   //Jump Limitation
+    //   if (event.code === "Space" && game.player.limiteDeSalto === false) {
+    //     document.getElementById("salto").play()
+    //     game.player.setDirection(-1);
+    //   }
+    // }
+    //const sonido = document.getElementById("salto");
+    const setPlayerDirection = (event) => {
+      //Jump Limitation
+      if (document.getElementById("salto")) {
+        if (event.code === "Space" && game.player.limiteDeSalto === false) {
+          game.player.setDirection(-1);
+          document.getElementById("salto").play();
+        }
+      }
+    };
+    document.addEventListener("keydown", setPlayerDirection);
   };
+
+  // const buildGameOver = () => {
+
+  //   buildDom(`
+  //           <section class="game-over">
+  //             <div class="gameOver">
+  //               <h2> Tus monedas fueron:  </h2>
+  //               <button class="botones" id="restart">RESTART</button>
+  //               <div id="funeral">
+  //               </div>
+  //             </div>
+  //           </section>
+  //       `);
+
+  //   const restartButton = document.querySelector("button");
+  //   restartButton.addEventListener("click", buildGameScreen);
+  // };
 
   buildSplashScreen();
 };

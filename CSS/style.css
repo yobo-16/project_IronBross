@@ -92,15 +92,18 @@ button:hover {
   box-shadow: 0 4px 8px 0 #c3eeb1;
 }
 
-h2 {
-  color: white;
-  display: block;
+h1 {
+  font-size: 40px;
+  color: #403b3e;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-over {
-  padding-top: 170px;
+  padding-top: 110px;
   width: 726px;
   height: 540px;
   background-image: url(../img/GameOver.png);
