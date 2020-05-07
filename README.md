@@ -53,7 +53,7 @@ Repositorio: https://github.com/yobo-16/project_IronBross
 ​
 ## Kanban
 
-    trello: https://trello.com/b/VAwkFrdu/ironbross - automatic!
+trello: (https://trello.com/b/VAwkFrdu/ironbross)
 
 ## Iteraciones
 
@@ -70,6 +70,12 @@ Iteración 2.
 
     . Crear enemigos.
     . Crear colisión con obstáculos.
+    
+    
+Iteración 3.
+
+    . Crear hoyos.
+    . Crear caída en los hoyos.
 
 
 
